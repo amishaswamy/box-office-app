@@ -13,3 +13,7 @@ export const searchForShows = query => {
 };
 
 //export const searchForShows = (query) => apiGet(`/search/shows?q=${query}`);
+
+export const searchForPeople = query => {
+  return apiGet(`/search/people?q=${query}`);
+};
