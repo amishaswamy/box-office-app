@@ -22,6 +22,7 @@ const SearchForm = ({ onSearch }) => {
 
     onSearch(options);
   };
+
   return (
     <form onSubmit={onSubmit}>
       <input type="text" value={searchStr} onChange={onSearchInputChange} />
