@@ -18,4 +18,5 @@ export const searchForPeople = query => {
   return apiGet(`/search/people?q=${query}`);
 };
 
-export const getShowById = showId => apiGet(`/shows/${showId}`);
+export const getShowById = showId =>
+  apiGet(`/shows/${showId}?embed[]=seasons&embed[]=cast`);
